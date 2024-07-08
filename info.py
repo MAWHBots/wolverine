@@ -26,7 +26,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 SUPPORT_CHANNEL = environ.get('CHANNEL_USERNAME')
 SUPPORT_GROUP = environ.get('GROUP_USERNAME')
-INDEX_USER = [int(environ.get('INDEX_USER', ''))]
+INDEX_USER = [int(environ.get('INDEX_USER', '1247742004'))]
 INDEX_USER.extend(ADMINS)
 
 # MongoDB information
